@@ -442,11 +442,17 @@ body {
   font-size: 14.4px;
   line-height: 1.7;
 }
-.profile .profile_wrapper .profile_about .profile_about_image {
+.profile .profile_wrapper .profile_about .profile_about_box {
   overflow: hidden;
   border-radius: 50%;
   width: 100px;
+  height: 100px;
   margin: 58px auto 0;
+}
+.profile .profile_wrapper .profile_about .profile_about_image {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .profile .profile_wrapper .profile_about .profile_textContent {
   text-align: left;
@@ -525,7 +531,7 @@ body {
             align-items: center;
     margin: 67px auto 0;
   }
-  .profile .profile_wrapper .profile_about .profile_about_image {
+  .profile .profile_wrapper .profile_about .profile_about_box {
     margin: 0;
   }
   .profile .profile_wrapper .profile_bicycle {
@@ -550,6 +556,11 @@ body {
   }
   .profile .profile_wrapper .profile_bicycle_item:not(:first-of-type) {
     margin-top: 0;
+  }
+  .profile .profile_wrapper .profile_bicycle_image {
+    height: 65%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 /*# sourceMappingURL=index.css.map */
